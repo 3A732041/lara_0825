@@ -1,10 +1,11 @@
 @extends('layouts.master')
+<!DOCTYPE html>
+<html lang="en">
+<head>
 @section('title', 'Clean Blog')
-
-
-  <!-- Navigation -->
-  @section('content')
-  <!-- Page Header -->
+</head>
+<body>
+@section('content')
   <header class="masthead" style="background-image: url({{asset('img/home-bg.jpg')}})">
     <div class="overlay"></div>
     <div class="container">
@@ -18,8 +19,6 @@
       </div>
     </div>
   </header>
-
-  <!-- Main Content -->
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
@@ -83,11 +82,6 @@
       </div>
     </div>
   </div>
-  @endsection
-
-
-  <!-- Footer -->
-
-
-
-
+@endsection
+</body>
+</html>
