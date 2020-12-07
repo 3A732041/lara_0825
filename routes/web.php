@@ -50,8 +50,11 @@ Route::get('/contact',[PostsController::class,'contact'])->name('posts.contact')
 //    'content-test'=>'updated content-test',
 //]);
 
+//$post=Post::find(1);
+//$post->title='saved title';
+//$post->content='saved content';
+//$post->contenttest='saved content-test';
+//$post->save();
+
 $post=Post::find(1);
-$post->title='saved title';
-$post->content='saved content';
-$post->contenttest='saved content-test';
-$post->save();
+$post->delete();
