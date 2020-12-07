@@ -43,9 +43,15 @@ Route::get('/contact',[PostsController::class,'contact'])->name('posts.contact')
 //$posts=Post::where('id','<',10)->orderBy('id','DESC')->get();
 //dd($posts);
 
+//$post=Post::find(1);
+//$post->update([
+//    'title'=>'updated title',
+//    'content'=>'updated content',
+//    'content-test'=>'updated content-test',
+//]);
+
 $post=Post::find(1);
-$post->update([
-    'title'=>'updated title',
-    'content'=>'updated content',
-    'content-test'=>'updated content-test',
-]);
+$post->title='saved title';
+$post->content='saved content';
+$post->contenttest='saved content-test';
+$post->save();
