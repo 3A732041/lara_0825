@@ -59,5 +59,6 @@ Route::get('/contact',[PostsController::class,'contact'])->name('posts.contact')
 //$post=Post::find(1);
 //$post->delete();
 
-Post::destroy(2);
+//Post::destroy(2);
 
+Post::destroy(3,5,7);
