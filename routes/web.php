@@ -28,11 +28,14 @@ Route::get('/contact',[PostsController::class,'contact'])->name('posts.contact')
 //$post->content ='test content';
 //$post->save();
 
-Post::create([
-    'title'=>'test title',
-    'content'=>'test content',
-    'content-test'=>'cc-test content',
-]);
+//Post::create([
+//    'title'=>'test title',
+//    'content'=>'test content',
+//    'content-test'=>'cc-test content',
+//]);
 
-$posts=Post::all();
-dd($posts);
+//$posts=Post::all();
+//dd($posts);
+
+$post=Post::find(1);
+dd($post);
