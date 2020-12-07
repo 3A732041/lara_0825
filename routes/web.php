@@ -31,4 +31,8 @@ Route::get('/contact',[PostsController::class,'contact'])->name('posts.contact')
 Post::create([
     'title'=>'test title',
     'content'=>'test content',
+    'content-test'=>'cc-test content',
 ]);
+
+$posts=Post::all();
+dd($posts);

@@ -14,7 +14,8 @@ class Post extends Model
     protected $fillable = [
         'title',
         'content',
-        'is_feature'
+        'is_feature',
+        'content-test'
     ];
-    
+
 }
