@@ -68,7 +68,12 @@ Route::get('/contact',[PostsController::class,'contact'])->name('posts.contact')
 //$featuredPosts=Post::where('is_feature',1)->get();
 //dd($featuredPosts);
 
-$fourthPost=Post::find(4);
-dd($fourthPost);
-$lastPost=Post::orderBy('id','DESC')->first();
-dd($lastPost);
+//$fourthPost=Post::find(4);
+//dd($fourthPost);
+//$lastPost=Post::orderBy('id','DESC')->first();
+//dd($lastPost);
+
+$post=Post::find(1);
+foreach($post->comments as $comment){
+    echo $comment->content.'<br>';
+}
