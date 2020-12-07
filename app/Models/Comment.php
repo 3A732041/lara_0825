@@ -14,5 +14,5 @@ class Comment extends Model
         'content',
     ];
 
-    
+
 }
