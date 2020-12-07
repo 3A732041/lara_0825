@@ -56,5 +56,8 @@ Route::get('/contact',[PostsController::class,'contact'])->name('posts.contact')
 //$post->contenttest='saved content-test';
 //$post->save();
 
-$post=Post::find(1);
-$post->delete();
+//$post=Post::find(1);
+//$post->delete();
+
+Post::destroy(2);
+
